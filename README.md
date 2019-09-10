@@ -16,29 +16,29 @@ Example: Trigger Handlers
 The metadata has a setting for the *AccountTriggerHandler*. The handler class of the same name shows:
 ```Apex
 public with sharing class AccountTriggerHandler extends c_TriggerHandler {
-    *private final static string TRIGGER_NAME = 'AccountTriggerHandler';
-*
+    private final static string TRIGGER_NAME = 'AccountTriggerHandler';
+    
     /**
     * Trigger DML
     **/
     public override void beforeInsert() {
         // Manage execution by TRIGGER_NAME in automation control. 
         // - To add an option, append the trigger name to the custom metadata c_Automation__mtd
-        *if (c_AutomationControl.isDisabled(TRIGGER_NAME)) return;*
+        if (c_AutomationControl.isDisabled(TRIGGER_NAME)) return;
 ```
 
 Example: Domain Manager
 Above is a setting for the Sales cloud Account Manager class, with a speciffic action ‘TriggerAction’ appended to the end so we can understrand what its going to control. The code is like this:
 
+```Apex
 public with sharing class c_AccountManager {
-
     /**
     * Trigger DML processes for this domain
     **/
     public static void beforeInsert(Account[] LSC_Accounts) {
         // Prevent the method from firing if it has been disabled
-        *if (c_AutomationControl.isDisabled('c_AccountManager_TriggerAction')) return;*
-
+        if (c_AutomationControl.isDisabled('c_AccountManager_TriggerAction')) return;
+```
 etc. etc.
 
 
