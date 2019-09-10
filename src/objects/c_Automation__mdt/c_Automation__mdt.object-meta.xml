@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>A common object used to control automation of validation rules, process builder and triggers. Provide the RecordAPIName for a row, and define the settings you require to control the automation execution. Standard values are: Triggers, ValidationRules, ProcessBuilder
+Access custom metadata in formula as $CustomMetadata.CustomMetadataTypeAPIName.RecordAPIName.FieldAPIName</description>
+    <label>Automation Control</label>
+    <pluralLabel>Automation Controls</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>
