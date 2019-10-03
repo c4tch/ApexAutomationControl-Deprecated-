@@ -10,7 +10,8 @@ Description:
 History
 -------
 VERSION      UPDATED BY       DATE            DETAIL
-    1.0      Matt Evans       25/08/2019      Initial pattern
+    0.0      Kevin O'Hara     25/08/2019      Author
+    1.0      Matt Evans       25/08/2019      Extended with automation lock
 ***********************************************************************/
 
 public virtual class c_TriggerHandler {

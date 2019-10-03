@@ -12,7 +12,7 @@
     Call each domain handler with their respective account records. 
  @History
   VERSION     AUTHOR           DATE            DETAIL
-  1.0         Matt Evans       28/8/2019       Draft
+  1.0         Matt Evans       28/8/2019       EXample code, to allow the package to compile
  */
 
 public with sharing class AccountTriggerHandler extends c_TriggerHandler {
