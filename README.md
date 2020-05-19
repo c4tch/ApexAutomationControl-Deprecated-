@@ -2,6 +2,11 @@
 
 Automation for validation rules, process builder and triggers can be managed from the c_Automation__mtd custom metadata type. Automation control is the process of managing any automation on the platform from a central location (a custom metadata object).
 
+Why not custom settings? Why not Custom Permissions?
+Well first, Custom settings are excellent, they offer hierachial functionality (varied values based on Profile and User), however to create a new scope to control you have to create a new field in the custom setting object, or a new custom setting object and migration to production is a pain, so is testing. 
+
+Custom Permissions are an excellent alternative, and in my currenty projects I'm actually going to try using these instead.
+
 Syntax for formula (in *validation rules* etc.) to check a custom metadata type is $CustomMetadata.CustomMetadataTypeAPIName.RecordAPIName.FieldAPIName
 
 For this therefore use *$c_Automation__mtd.[Automation Control Name].Disable__c*
