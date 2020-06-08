@@ -9,7 +9,9 @@ Therefore we end up with a check list: the framework should have a solution that
 3. Can be easily extended
 
 Custom settings pass only (1)
+
 Custom metadata passes (2) and (3) but for (1) it has a partial pass as the code can do this, and in the UI you get a long formula that can check any additional fields you add to the Custom Meta data
+
 Custom Permissions + Permission Sets... Passes (1) (2) and (3)
 
 So, DEPRECATED! Go check out Custom Permissions if you dont know them yet. Here is how I recommended to a recent client to use them:
